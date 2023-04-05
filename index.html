@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="description"
+        content="Shop online with the best discounts on the sales world and save for even more. here we dedicate our time to give you a better budget and a better lifestyle with money cosciousness, the way of savings and growth...">
+    <meta name="keywords" content="baby products, baby clothes, shop online, baby bottles, teether for baby, baby toys">
+    <title>BabyWelOo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body id="app">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h1>BabyWelOo</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href=""></a>New Arrivals</li>
+            <li><a href=""></a>Baby Fashion</li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Popular</li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="content">
+        <h1>Blog reviews+New Sales Everyday
+            <hr>
+           Affiliate Marketing World
+        </h1>
+
+       
+
+    </section>
+
+    <h1 class="pheading">  <em>Many or all of the products featured here are from our partners who compensate us.</em></h1>
+   
+    <section class="sec">
+        
+        <a href="./search/indexhtml"></a>
+        <!-- <input v-model="searchText"> -->
+        <div class="products">
+
+
+            <!--minuto 11;00 terminar-->
+
+
+            <!--card starts-->
+
+
+            
+            <!--card ends>-->
+
+           
+
+
+            <div class="card" v-for="item in filteredProducts">
+                <div class="img"><img :src="item.image.src" :alt="item.image.alt">
+                </div>
+                <div class="desc">{{item.desc}}</div>
+                <div class="title">{{item.title}}</div>
+                <div class="box">
+                    <div class="price">{{item.box.price}}</div>
+                    <a :href="'https://amzn.to/' + item.box.link.href" target="_blank"><button
+                            class="btn">{{'https://amzn.to/' + item.box.link.href}}</button></a>
+                </div>
+
+            </div>
+
+
+
+    </section>
+
+    
+
+    <footer>
+        <p>Copyrights at <a href="">BillwheelOo</a></p>
+    </footer>
+</body>
+<!-- 
+
+<script>
+    $(".menu-btn").click(function ()){
+        $("navbar .menu").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
+    });
+</script> -->
+<script src="script.js"></script>
+
+</html>
